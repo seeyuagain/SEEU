@@ -44,13 +44,14 @@ proxy-groups:
       url: http://cp.cloudflare.com/generate_204
 
 proxy-providers:
+  Servers:
     type: http
-    url: https://raw.githubusercontent.com/seeyuagain/SEEU/main/SEEUserver.yaml
-    path: ./SEEUserver.yaml
+    url: https://raw.githubusercontent.com/seeyuagain/SEEU/main/SEEUservers.yaml
+    path: ./Servers.yaml
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
-      interval: 600
+      interval: 300
 
 rules:
   - GEOSITE,CATEGORY-ADS-ALL,Ads
