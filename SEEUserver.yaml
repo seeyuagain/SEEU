@@ -1,0 +1,31 @@
+proxies:
+  - name: TR OVH 80 WS
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 1f2fc840-17d2-11ed-91c5-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sgovh-trojan.bonds.id
+    udp: true
+
+  - name: VM OVH 443 WS
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: ff382d09-becd-41cb-8e4f-3e256b27de47
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-ovh3.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/djdkk/62f2402db5bf7/
+      headers:
+        Host: sg-ovh3.v2-ray.com
+    udp: true
