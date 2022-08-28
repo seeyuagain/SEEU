@@ -1,19 +1,6 @@
 proxies:
-  - name: TR OVH 80 Wkwk
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: 1f2fc840-17d2-11ed-91c5-1239d0255272
-    skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sgovh-trojan.bonds.id
-    udp: true
 
-  - name: VM OVH 443 WS
+  - name: sg-ovh1.v2-ray.com
     server: 172.67.199.34
     port: 443
     type: vmess
@@ -22,10 +9,123 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: sg-ovh3.v2-ray.com
+    servername: sg-ovh1.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/djdkk/62f2402db5bf7/
+      path: /fastssh/29292929/6308e922e3015/
       headers:
-        Host: sg-ovh3.v2-ray.com
+        Host: sg-ovh1.v2-ray.com
+    udp: true
+  - name: sg-ovh1.v2-ray.com 2
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: ff382d09-becd-41cb-8e4f-3e256b27de47
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-ovh1.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/29292929/6308e922e3015/
+      headers:
+        Host: sg-ovh1.v2-ray.com
+    udp: true
+  - name: sg-ovh2.v2-ray.com
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-ovh2.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/2929922/6308e95307d1d/
+      headers:
+        Host: sg-ovh2.v2-ray.com
+    udp: true
+  - name: sg-ovh2.v2-ray.com 2
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-ovh2.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/2929922/6308e95307d1d/
+      headers:
+        Host: sg-ovh2.v2-ray.com
+    udp: true
+
+  - name: id-lb.vhax.net
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/29292/6308ea0c19136/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: id-lb.vhax.net 2
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/29292/6308ea0c19136/
+      headers:
+        Host: id-lb.vhax.net
+    udp: true
+  - name: sg-lb.vhax.net
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/29292/6308ea4417658/
+      headers:
+        Host: sg-lb.vhax.net
+    udp: true
+  - name: sg-lb.vhax.net 2
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: 6fea1649-425b-4092-bf53-29792152c925
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg-lb.vhax.net
+    network: ws
+    ws-opts:
+      path: /sshkit/29292/6308ea4417658/
+      headers:
+        Host: sg-lb.vhax.net
     udp: true
