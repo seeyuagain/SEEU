@@ -1,25 +1,25 @@
 proxies:
-  - name: sg-ovh2.v2-ray.com
-    server: 172.67.199.34
-    port: 80
-    type: vmess
-    uuid: afef92d5-b5b9-46aa-a982-3914fe62c1c5
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: sg-ovh2.v2-ray.com
-    network: ws
-    ws-opts:
-      path: /fastssh/39392/6312d4ba0a6e7/
-      headers:
-        Host: sg-ovh2.v2-ray.com
-    udp: true
-  - name: sg-ovh2.v2-ray.com 2
-    server: 172.67.199.34
+  - name: AMP
+    server: access.zoominfo.com
     port: 443
     type: vmess
-    uuid: afef92d5-b5b9-46aa-a982-3914fe62c1c5
+    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-atha.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/2838292/631e7fdf8ffa1/
+      headers:
+        Host: sg-atha.v2-ray.com
+    udp: true
+  - name: OVH
+    server: access.zoominfo.com
+    port: 443
+    type: vmess
+    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
     alterId: 0
     cipher: auto
     tls: true
@@ -27,12 +27,12 @@ proxies:
     servername: sg-ovh2.v2-ray.com
     network: ws
     ws-opts:
-      path: /fastssh/39392/6312d4ba0a6e7/
+      path: /fastssh/28392/631e800e3b463/
       headers:
         Host: sg-ovh2.v2-ray.com
     udp: true
-  - name: sg-lb.vhax.net
-    server: 172.67.199.34
+  - name: SG LB
+    server: access.zoominfo.com
     port: 80
     type: vmess
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -43,23 +43,7 @@ proxies:
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/39292/6312d4921717a/
-      headers:
-        Host: sg-lb.vhax.net
-    udp: true
-  - name: sg-lb.vhax.net 2
-    server: 172.67.199.34
-    port: 443
-    type: vmess
-    uuid: 6fea1649-425b-4092-bf53-29792152c925
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: sg-lb.vhax.net
-    network: ws
-    ws-opts:
-      path: /sshkit/39292/6312d4921717a/
+      path: /sshkit/3939392/631e807c4ea03/
       headers:
         Host: sg-lb.vhax.net
     udp: true
