@@ -1,5 +1,5 @@
 proxies:
-  - name: FR
+  - name: FR OVH
     server: access.zoominfo.com
     port: 443
     type: trojan
