@@ -1,37 +1,31 @@
 proxies:
-  - name: AMP
+  - name: FR
     server: access.zoominfo.com
     port: 443
-    type: vmess
-    uuid: 656793c4-32ee-4caf-a393-6a9cc29d0d85
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: c4138930-36ed-11ed-a911-1239d0255272
     skip-cert-verify: true
-    servername: sg-atha.v2-ray.com
+    sni: fr-trojan.bonds.id
     network: ws
     ws-opts:
-      path: /fastssh/2838292/631e7fdf8ffa1/
+      path: /howdy
       headers:
-        Host: sg-atha.v2-ray.com
+        Host: fr-trojan.bonds.id
     udp: true
-  - name: OVH
+  - name: TR OVH
     server: access.zoominfo.com
     port: 443
-    type: vmess
-    uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: e643b0d0-36ed-11ed-9e3b-1239d0255272
     skip-cert-verify: true
-    servername: sg-ovh2.v2-ray.com
+    sni: sgovh-trojan.bonds.id
     network: ws
     ws-opts:
-      path: /fastssh/28392/631e800e3b463/
+      path: /howdy
       headers:
-        Host: sg-ovh2.v2-ray.com
+        Host: sgovh-trojan.bonds.id
     udp: true
-  - name: SG LB
+  - name: LB OVH
     server: access.zoominfo.com
     port: 80
     type: vmess
@@ -43,7 +37,39 @@ proxies:
     servername: sg-lb.vhax.net
     network: ws
     ws-opts:
-      path: /sshkit/3939392/631e807c4ea03/
+      path: /sshkit/489392929/63266f49562da/
       headers:
         Host: sg-lb.vhax.net
+    udp: true
+  - name: VM OVH 2
+    server: access.zoominfo.com
+    port: 443
+    type: vmess
+    uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-ovh2.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/383829/63266fa715253/
+      headers:
+        Host: sg-ovh2.v2-ray.com
+    udp: true
+  - name: ATHA
+    server: access.zoominfo.com
+    port: 443
+    type: vmess
+    uuid: b80925d6-40fa-4161-9e32-3550965527fd
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg-atha.v2-ray.com
+    network: ws
+    ws-opts:
+      path: /fastssh/3839292/63267022d9245/
+      headers:
+        Host: sg-atha.v2-ray.com
     udp: true
