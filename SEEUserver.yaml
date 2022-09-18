@@ -1,6 +1,6 @@
 proxies:
   - name: FR OVH
-    server: access.zoominfo.com
+    server: 172.67.199.34
     port: 443
     type: trojan
     password: c4138930-36ed-11ed-a911-1239d0255272
@@ -13,7 +13,7 @@ proxies:
         Host: fr-trojan.bonds.id
     udp: true
   - name: TR OVH
-    server: access.zoominfo.com
+    server: 172.67.199.34
     port: 443
     type: trojan
     password: e643b0d0-36ed-11ed-9e3b-1239d0255272
@@ -26,7 +26,7 @@ proxies:
         Host: sgovh-trojan.bonds.id
     udp: true
   - name: LB OVH
-    server: access.zoominfo.com
+    server: 172.67.199.34
     port: 80
     type: vmess
     uuid: 6fea1649-425b-4092-bf53-29792152c925
@@ -42,7 +42,7 @@ proxies:
         Host: sg-lb.vhax.net
     udp: true
   - name: VM OVH 2
-    server: access.zoominfo.com
+    server: 172.67.199.34
     port: 443
     type: vmess
     uuid: bb4b9e95-c9ff-411c-9a47-483570e169aa
@@ -58,7 +58,7 @@ proxies:
         Host: sg-ovh2.v2-ray.com
     udp: true
   - name: ATHA
-    server: access.zoominfo.com
+    server: 172.67.199.34
     port: 443
     type: vmess
     uuid: b80925d6-40fa-4161-9e32-3550965527fd
