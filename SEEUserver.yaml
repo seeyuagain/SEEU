@@ -1,5 +1,5 @@
 proxies:
-  - name: NGEBUT 1
+  - name: FR
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -12,7 +12,7 @@ proxies:
       headers:
         Host: fr-trojan.bonds.id
     udp: true
-  - name: NGEBUT 2
+  - name: FR II
     server: 172.67.199.34
     port: 443
     type: trojan
@@ -25,7 +25,7 @@ proxies:
       headers:
         Host: fr-trojan.bonds.id
     udp: true
-  - name: PING KECIK
+  - name: SG OVH
     server: 172.67.199.34
     port: 443
     type: trojan
