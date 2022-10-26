@@ -51,7 +51,7 @@ proxies:
       headers:
         Host: sg-atha.bonds.id
       udp: true
-  - name: IKD BGR 2
+  - name: ID BGR
     server: 172.67.199.34
     port: 443
     type: trojan
