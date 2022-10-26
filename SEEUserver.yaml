@@ -3,7 +3,7 @@ proxies:
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: f41152e0-49c2-11ed-ad56-1239d0255272
+    password: 3c319e10-552b-11ed-9ac1-1239d0255272
     skip-cert-verify: true
     sni: fr-trojan.bonds.id
     network: ws
@@ -12,11 +12,11 @@ proxies:
       headers:
         Host: fr-trojan.bonds.id
     udp: true
-  - name: FR II
+  - name: FR2
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 1331f4d0-49c3-11ed-94ef-1239d0255272
+    password: 4e871d90-552b-11ed-8345-1239d0255272
     skip-cert-verify: true
     sni: fr-trojan.bonds.id
     network: ws
@@ -29,7 +29,7 @@ proxies:
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 3a307960-49c3-11ed-90f9-1239d0255272
+    password: 6fe1c4c0-552b-11ed-ad03-1239d0255272
     skip-cert-verify: true
     sni: sgovh-trojan.bonds.id
     network: ws
@@ -37,4 +37,30 @@ proxies:
       path: /howdy
       headers:
         Host: sgovh-trojan.bonds.id
+    udp: true
+  - name: SG DS
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 8a750ce0-552b-11ed-9b5e-1239d0255272
+    skip-cert-verify: true
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-atha.bonds.id
+      udp: true
+  - name: IKD BGR 2
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 744b4a70-52f4-11ed-b6ba-1239d0255272
+    skip-cert-verify: true
+    sni: idtj-bogor.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: idtj-bogor.bonds.id
     udp: true
