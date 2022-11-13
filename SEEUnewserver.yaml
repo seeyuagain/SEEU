@@ -1,9 +1,9 @@
 proxies:
-  - name: SGTRweekly - Howdy
+  - name: SGTRweeks
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: f9c09630-62af-11ed-a4a9-1239d0255272
+    password: db670ce0-6362-11ed-a55e-1239d0255272
     skip-cert-verify: true
     sni: trojan2.udpgw.com
     network: ws
@@ -12,28 +12,24 @@ proxies:
       headers:
         Host: trojan2.udpgw.com
     udp: true
-
-  - name: SGdynamic
-    server: 172.67.199.34
-    port: 80
-    type: vmess
-    uuid: d9bf040f-8703-4be0-bf15-df3e1e44ed09
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /fastssh
-      headers:
-        Host: dynamic-sg2b.obfs.xyz
-    udp: true
-
-  - name: FRtrojan
+  - name: SGovh
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 86060e30-6356-11ed-92e3-1239d0255272
+    password: 20742580-6363-11ed-8e87-1239d0255272
+    skip-cert-verify: true
+    sni: sgovh-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sgovh-trojan.bonds.id
+    udp: true
+  - name: FRovh
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 01415840-6363-11ed-bcd9-1239d0255272
     skip-cert-verify: true
     sni: fr-trojan.bonds.id
     network: ws
