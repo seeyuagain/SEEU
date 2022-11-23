@@ -12,6 +12,21 @@ proxies:
       headers:
         Host: trojan2.udpgw.com
     udp: true
+  - name: SGsstore
+    server: 172.67.199.34
+    port: 80
+    type: vmess
+    uuid: b366c93c-fb37-4996-bde9-70e7e6057d0a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: sg.vmess1.xservs.xyz
+    udp: true
   - name: SGovh
     server: 172.67.199.34
     port: 443
