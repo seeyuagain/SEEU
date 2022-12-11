@@ -1,17 +1,33 @@
 proxies:
-  - name: WEEKLY - SG
+  - name: SGvm
+    server: 172.67.199.34
+    port: 443
+    type: vmess
+    uuid: 6fa6f7f6-9505-4543-a163-71775824c80b
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: v2ray1.udpgw.com
+    udp: true
+  - name: SGatha
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: e508d3c0-7503-11ed-9a31-1239d0255272
+    password: 816d37a0-78ec-11ed-9717-1239d0255272
     skip-cert-verify: true
-    sni: trojan1.udpgw.com
+    sni: sg-atha.bonds.id
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: trojan1.udpgw.com
+        Host: sg-atha.bonds.id
     udp: true
+
   - name: SGovh
     server: 172.67.199.34
     port: 443
