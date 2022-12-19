@@ -1,38 +1,22 @@
 proxies:
-  - name: SGvm
-    server: 172.67.199.34
-    port: 443
-    type: vmess
-    uuid: 6fa6f7f6-9505-4543-a163-71775824c80b
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /worryfree
-      headers:
-        Host: v2ray1.udpgw.com
-    udp: true
-  - name: SGatha
+  - name: SG WEEKLY
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 816d37a0-78ec-11ed-9717-1239d0255272
+    password: ad34d2c0-7f9d-11ed-bf64-1239d0255272
     skip-cert-verify: true
-    sni: sg-atha.bonds.id
+    sni: trojan2.udpgw.com
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sg-atha.bonds.id
+        Host: trojan2.udpgw.com
     udp: true
-
-  - name: SGovh
+  - name: SG OVH
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 20742580-6363-11ed-8e87-1239d0255272
+    password: d84575c0-7f9d-11ed-bbf7-1239d0255272
     skip-cert-verify: true
     sni: sgovh-trojan.bonds.id
     network: ws
@@ -41,11 +25,11 @@ proxies:
       headers:
         Host: sgovh-trojan.bonds.id
     udp: true
-  - name: USovh
+  - name: US OVH
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 9eb7a400-69f8-11ed-95fb-1239d0255272
+    password: ede17240-7f9d-11ed-84f1-1239d0255272
     skip-cert-verify: true
     sni: us-trojan.bonds.id
     network: ws
@@ -53,4 +37,17 @@ proxies:
       path: /howdy
       headers:
         Host: us-trojan.bonds.id
+    udp: true
+  - name: SG ATHA
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: 44b83500-7f9e-11ed-84de-1239d0255272
+    skip-cert-verify: true
+    sni: sg-atha.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-atha.bonds.id
     udp: true
