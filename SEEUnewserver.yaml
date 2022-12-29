@@ -12,24 +12,24 @@ proxies:
       headers:
         Host: trojan2.udpgw.com
     udp: true
-  - name: SG OVH
+  - name: FR
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: d84575c0-7f9d-11ed-bbf7-1239d0255272
+    password: 214c30c0-8736-11ed-9c36-1239d0255272
     skip-cert-verify: true
-    sni: sgovh-trojan.bonds.id
+    sni: fr-trojan.bonds.id
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: sgovh-trojan.bonds.id
+        Host: fr-trojan.bonds.id
     udp: true
   - name: US OVH
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: ede17240-7f9d-11ed-84f1-1239d0255272
+    password: 0b82add0-8736-11ed-afbb-1239d0255272
     skip-cert-verify: true
     sni: us-trojan.bonds.id
     network: ws
@@ -42,7 +42,7 @@ proxies:
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 44b83500-7f9e-11ed-84de-1239d0255272
+    password: fd91d740-8735-11ed-a8ee-1239d0255272
     skip-cert-verify: true
     sni: sg-atha.bonds.id
     network: ws
