@@ -3,14 +3,14 @@ proxies:
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: ad34d2c0-7f9d-11ed-bf64-1239d0255272
+    password: 08037a60-8737-11ed-a3c7-1239d0255272
     skip-cert-verify: true
-    sni: trojan2.udpgw.com
+    sni: trojan3.udpgw.com
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: trojan2.udpgw.com
+        Host: trojan3.udpgw.com
     udp: true
   - name: FR
     server: 172.67.199.34
