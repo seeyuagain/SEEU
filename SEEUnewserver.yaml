@@ -1,16 +1,16 @@
 proxies:
-  - name: SG WEEKLY
+  - name: SG NEW
     server: 172.67.199.34
     port: 443
     type: trojan
-    password: 08037a60-8737-11ed-a3c7-1239d0255272
+    password: e01ac960-8bd8-11ed-959e-1239d0255272
     skip-cert-verify: true
-    sni: trojan3.udpgw.com
+    sni: trojan1.udpgw.com
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: trojan3.udpgw.com
+        Host: trojan1.udpgw.com
     udp: true
   - name: FR
     server: 172.67.199.34
