@@ -12,6 +12,19 @@ proxies:
       headers:
         Host: trojan1.udpgw.com
     udp: true
+  - name: SG HE
+    server: 172.67.199.34
+    port: 443
+    type: trojan
+    password: a128f1f0-8bfb-11ed-a0fa-1239d0255272
+    skip-cert-verify: true
+    sni: sg2-trojan.bonds.id
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg2-trojan.bonds.id
+    udp: true
   - name: FR
     server: 172.67.199.34
     port: 443
