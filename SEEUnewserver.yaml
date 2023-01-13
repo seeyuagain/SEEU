@@ -1,66 +1,26 @@
 proxies:
-  - name: DO
-    server: 172.67.199.34
+
+  - name: WEEK SSL
+    server: trojan2.udpgw.com
     port: 443
     type: trojan
-    password: e01ac960-8bd8-11ed-959e-1239d0255272
+    password: 81422140-9316-11ed-a439-1239d0255272
     skip-cert-verify: true
-    sni: trojan1.udpgw.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: trojan1.udpgw.com
+    sni: store.zoom.us
     udp: true
-  - name: HE 2
-    server: 172.67.199.34
+  - name: HE SSL
+    server: sg2-trojan.bonds.id
     port: 443
     type: trojan
-    password: a128f1f0-8bfb-11ed-a0fa-1239d0255272
+    password: 56855b60-9316-11ed-9cc6-1239d0255272
     skip-cert-verify: true
-    sni: sg2-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg2-trojan.bonds.id
+    sni: store.zoom.us
     udp: true
-  - name: FR
-    server: 172.67.199.34
+  - name: US SSL
+    server: us-trojan.bonds.id
     port: 443
     type: trojan
-    password: 214c30c0-8736-11ed-9c36-1239d0255272
+    password: 65af3e80-9316-11ed-be67-1239d0255272
     skip-cert-verify: true
-    sni: fr-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: fr-trojan.bonds.id
-    udp: true
-  - name: US
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: 0b82add0-8736-11ed-afbb-1239d0255272
-    skip-cert-verify: true
-    sni: us-trojan.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: us-trojan.bonds.id
-    udp: true
-  - name: ATHA
-    server: 172.67.199.34
-    port: 443
-    type: trojan
-    password: fd91d740-8735-11ed-a8ee-1239d0255272
-    skip-cert-verify: true
-    sni: sg-atha.bonds.id
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: sg-atha.bonds.id
+    sni: store.zoom.us
     udp: true
