@@ -1,14 +1,14 @@
 proxies:
 
-  - name: WEEK SSL
-    server: trojan2.udpgw.com
+  - name: WEEKS 443
+    server: trojan3.udpgw.com
     port: 443
     type: trojan
-    password: 81422140-9316-11ed-a439-1239d0255272
+    password: 8882baf0-9401-11ed-8259-1239d0255272
     skip-cert-verify: true
     sni: store.zoom.us
     udp: true
-  - name: HE SSL
+  - name: HE2 443
     server: sg2-trojan.bonds.id
     port: 443
     type: trojan
@@ -16,7 +16,7 @@ proxies:
     skip-cert-verify: true
     sni: store.zoom.us
     udp: true
-  - name: US SSL
+  - name: US 443
     server: us-trojan.bonds.id
     port: 443
     type: trojan
